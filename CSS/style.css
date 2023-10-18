@@ -1,0 +1,91 @@
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------HEADER---------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+.logo{
+    width: 250px;
+    float: none;
+    margin: 10px 15px;
+}
+.main-nav{
+    float: none;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 20px;
+
+}
+.main-nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.main-nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+    padding: 10px 0;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 4px solid #cccccc;
+}
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.nav-bar{
+    display: grid;
+    min-height: 100px;
+    grid-auto-flow: column;
+    background-color: #fcfcfc;
+    grid-gap: 1em;
+    padding: 0 20px;
+}
+
+
+/* ------------------------------------------------------ */
+/*------------------ for search bar--------------------- */
+/* /---------------------------------------------------- */
+.search-box{
+    width: 400px;
+    background: rgba(226, 228, 231,1);
+   
+    border-radius: 5px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+input{
+    flex: 1;         /* this make the search button move to the right side */
+    height: 40px;
+    background: rgb(251, 251, 251) ;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+}
+button{
+    height: 40px;
+    outline: 0;
+    font-size: 18px;
+}
+.result-box ul{
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius:3px ;
+    padding: 5px 10px;
+}
+.result-box ul li:hover{
+    background:rgb(202, 206, 211) ;
+}
+.result-box {
+    max-height: 200px;
+    overflow-y:scroll ;
+}
+
