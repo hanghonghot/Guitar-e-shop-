@@ -19,40 +19,44 @@ html{
 .main-nav{ grid-area: main-nav;}
 .side-nav{ grid-area: side-nav;}
 
-.nav-container>div{
+.nav-container{
     display: grid;
     grid-template-areas:
     'logo search-box search-box search-box main-nav main-nav'
     'logo side-nav side-nav side-nav side-nav side-nav';
     gap: 0px;
-    
+    padding-top: 15px;
     background-color: aliceblue;
+    /* justify-content: space-between; */
+}
+.nav-container>div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 100%;
 }
 .logo{
 
-    width: 450px;
-    float: none;
+    width: 200px;
     background-color: white;
-    transform: translate(5%, -25%);
+    transform: translate(2%, -3%);
     
 }
-.nav-bar{
-    
-    min-height: 50px;
-    /* grid-auto-flow: column; */
-    background-color: #fcfcfc;
-    padding-top: 15px;
-    
+
+.main-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 10px;
 }
-.main-nav{
-    padding-top: 17px;
-    font-size: 140%;
+.main-nav li:hover{
+    background-color: rgba(232, 180, 106, 0.896);
+    transition: all 0.5s;
 }
-.main-nav:nth-last-child() i{
-    margin-right: 20px;
-}
+
+
 .side-nav{
-    padding-top: 15px;
+    padding-left: 17px;
     display: flex;
     
 }
@@ -74,8 +78,11 @@ html{
 }
 .side-nav li a:hover,
 .side-nav li a:active{
-    border-bottom: 4px solid #cccccc;
+    border-bottom: 4px solid #020202;
+    background-color: rgba(232, 180, 106, 0.896);
+    transition: all 0.5s;
 }
+
 .clearfix::after{
     content: " ";
     display: table;
@@ -84,23 +91,23 @@ html{
 
 /*------------------ for search bar--------------------- */
 .search-box{
-    width: 800px;
+    width: 600px;
     background: rgb(255, 255, 255);
-    border-radius: 5px;
-    
 }
 .row{
     display: flex;
     align-items: center;
     padding: 0px 20px;
+    border-radius: 15px;
 }
 input{
     flex: 1;         /* this make the search button move to the right side */
     height: 50px;
-    background: rgba(226, 228, 231,1);
+    background: rgb(236, 238, 241);
     border: 0;
     outline: 0;
     font-size: 18px;
+    
 }
 ::placeholder{
     font-family: 'Playpen Sans', cursive;
@@ -109,7 +116,7 @@ input{
 button{
     height: 50px;
     outline: 0;
-    font-size: 18px;
+    font-size: 25px;
     border: none;
 }
 .result-box ul{
@@ -120,9 +127,10 @@ button{
     list-style: none;
     border-radius:15px ;
     padding: 5px 10px;
+    display: flex;
 }
 .result-box ul li:hover{
-    background:rgb(202, 206, 211) ;
+    background:rgba(232, 180, 106, 0.896) ;
 }
 .result-box {
     max-height: 200px;

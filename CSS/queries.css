@@ -1,0 +1,15 @@
+/* --------------------For mobile------------------------------- */
+/* ------------------------------------------------------------------ */
+@media all and (max-width:900px){
+    #hamberger-menu{
+        display: flex;
+    }
+    .side-nav{
+        /* display: none; */
+    }
+    .side-nav{
+        display: block;
+        align-items: flex-start;
+    }
+
+}

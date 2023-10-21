@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&family=Playpen+Sans:wght@300;400;700&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/queries.css">
     </head>
 
     <body>
@@ -16,8 +17,8 @@
             <div class="header">
                 <nav class="nav-container">
                 
-                        <divc class="logo">
-                            <a href="#home"><img class="logo" src="images/logo.svg" alt=""></a>
+                        <div class="logo">
+                            <a href="#home"><img class="logo" src="images/logo.jpg" alt=""></a>
                         </div>
                         
                         <div class="search-box">
@@ -32,9 +33,14 @@
                             </div>
                         </div>
                         <div class="main-nav">
-                            <a href=""><i class="fas fa-user"></i></a>
+                            <ul>
+                                <li><a href=""><i class="fas fa-user fa-2x"></i></a></li>
+                                <li><a href=""><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+                                <li id="hamberger-menu"><a href=""><i class="fas fa-bars mobile-nav-icon fa-2x" aria-hidden="true"></i></a></li>
+                            </ul>
+                            
                         
-                            <a href=""><i class="fas fa-shopping-cart"></i></a>
+                            
                             
                         </div>
                         <div class="side-nav">
@@ -47,13 +53,7 @@
                             </ul>
                         </div>
                         
-                        
                     
-                    
-                    
-                
-                
-                    <i class="fas fa-bars mobile-nav-icon"></i>
                 </nav>
 
             </div>
