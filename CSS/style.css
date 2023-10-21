@@ -14,85 +14,24 @@ html{
 /* ---------------------------------------------------------------------------- */
 /* -----------------------------HEADER---------------------------------------- */
 /* ----------------------------------------------------------------------------- */
-.logo{ grid-area: logo;}
-.search-box{ grid-area: search-box;}
-.main-nav{ grid-area: main-nav;}
-.side-nav{ grid-area: side-nav;}
 
-.nav-container{
-    display: grid;
-    grid-template-areas:
-    'logo search-box search-box search-box main-nav main-nav'
-    'logo side-nav side-nav side-nav side-nav side-nav';
-    gap: 0px;
-    padding-top: 15px;
-    background-color: aliceblue;
-    /* justify-content: space-between; */
-}
-.nav-container>div{
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding-top: 10px;
-    font-size: 100%;
-}
 .logo{
-
     width: 200px;
     background-color: white;
-    transform: translate(2%, -3%);
-    
-}
-
-.main-nav li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 30px;
-    padding-top: 10px;
-}
-.main-nav li:hover{
-    background-color: rgba(232, 180, 106, 0.896);
-    transition: all 0.5s;
-}
-
-
-.side-nav{
-    padding-left: 17px;
-    display: flex;
-    
-}
-.side-nav:nth-last-child() {
-    list-style: none;
+    transform: translate(1%, 5%);
+    position: relative;
+    float: left;
     margin-right: 20px;
-}
-.side-nav li{
-    display: inline-block;
-    margin-right: 30px;
-}
-.side-nav li a{
-    text-decoration: none;
-    color: black;
-    font-size: 130%;
-    font-weight: 700;
-    transition: border-bottom 0.5s;
     
 }
-.side-nav li a:hover,
-.side-nav li a:active{
-    border-bottom: 4px solid #020202;
-    background-color: rgba(232, 180, 106, 0.896);
-    transition: all 0.5s;
-}
-
-.clearfix::after{
-    content: " ";
-    display: table;
-    clear: both;
-}
-
 /*------------------ for search bar--------------------- */
 .search-box{
-    width: 600px;
+    width: 50%;
     background: rgb(255, 255, 255);
+    float: left;
+    margin-right: 30px; 
+    margin-top: 30px;   
+    position: relative;    
 }
 .row{
     display: flex;
@@ -136,4 +75,57 @@ button{
     max-height: 200px;
     overflow-y:scroll ;
 }
+ 
+/* ----------------------------------login, cart and side-bar--------------------------------------------------- */
+
+.main-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 35px;
+}
+.main-nav li:hover{
+    background-color: rgba(232, 180, 106, 0.896);
+    transition: all 0.5s;
+}
+#hamberger-menu{
+    display: none;
+}
+
+.side-nav{
+    margin-top: -10px;  
+    padding-left: 30px;
+    display: flex;
+    
+}
+.side-nav:nth-last-child() {
+    list-style: none;
+    margin-right: 20px;
+}
+.side-nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.side-nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 130%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+    
+}
+.side-nav li a:hover,
+.side-nav li a:active{
+    border-bottom: 4px solid #020202;
+    background-color: rgba(232, 180, 106, 0.896);
+    transition: all 0.5s;
+}
+
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
 

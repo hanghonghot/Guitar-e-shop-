@@ -3,11 +3,12 @@
 @media all and (max-width:900px){
     #hamberger-menu{
         display: flex;
+        position: absolute;
+        right: 10px;
+        top: 2px;
     }
-    .side-nav{
-        /* display: none; */
-    }
-    .side-nav{
+   
+    .side-nav li{
         display: block;
         align-items: flex-start;
     }
