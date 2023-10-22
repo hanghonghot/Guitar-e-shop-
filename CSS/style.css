@@ -15,12 +15,24 @@ html{
 /* -----------------------------HEADER---------------------------------------- */
 /* ----------------------------------------------------------------------------- */
 
+/* for indexcopy */
+.logo{ grid-row: logo;}
+.search-box{ grid-row: search-box;}
+.main-nav{ grid-row: main-nav;}
+.container{
+    display: grid;
+    grid-row: 'logo search-box search-box search-box main-nav main-nav';
+    gap: 0px;
+    padding-top: 15px;
+    background-color: pink;
+}
 .logo{
-    width: 200px;
+    width: 250px;
     background-color: white;
-    transform: translate(1%, 5%);
+    transform: translate(1%, 1%);
     position: relative;
-    float: left;
+    /* float: left; */
+    display: grid;
     margin-right: 20px;
     
 }
@@ -28,10 +40,12 @@ html{
 .search-box{
     width: 50%;
     background: rgb(255, 255, 255);
-    float: left;
-    margin-right: 30px; 
-    margin-top: 30px;   
-    position: relative;    
+    /* float: left; */
+    display: grid;
+    /* margin-right: 5%;  */
+    /* margin-left: 5%; */
+    margin-top: 40px;   
+    /* position: relative;     */
 }
 .row{
     display: flex;
@@ -77,49 +91,58 @@ button{
 }
  
 /* ----------------------------------login, cart and side-bar--------------------------------------------------- */
-
+.main-nav{
+    /* float: right; */
+    display: grid;
+    padding-left: 5%;
+    position: relative  ;
+    margin-top: 50px;
+}
 .main-nav li{
     list-style: none;
     display: inline-block;
     margin-right: 30px;
-    margin-top: 35px;
+    
+    
 }
 .main-nav li:hover{
     background-color: rgba(232, 180, 106, 0.896);
     transition: all 0.5s;
 }
-#hamberger-menu{
-    display: none;
-}
+
 
 .side-nav{
     margin-top: -10px;  
-    padding-left: 30px;
+    /* margin-left: 220px; */
     display: flex;
+    position: relative;
     
 }
-.side-nav:nth-last-child() {
-    list-style: none;
-    margin-right: 20px;
+#hamberger-menu{
+    display: none; 
+   
+    position: relative;
 }
 .side-nav li{
     display: inline-block;
     margin-right: 30px;
-}
-.side-nav li a{
     text-decoration: none;
     color: black;
     font-size: 130%;
     font-weight: 700;
-    transition: border-bottom 0.5s;
+    transition: border-bottom 0.5s;}
+/* .side-nav li a{
     
-}
+    
+    
+} */
 .side-nav li a:hover,
 .side-nav li a:active{
     border-bottom: 4px solid #020202;
     background-color: rgba(232, 180, 106, 0.896);
     transition: all 0.5s;
 }
+
 
 .clearfix::after{
     content: " ";

@@ -3,14 +3,30 @@
 @media all and (max-width:900px){
     #hamberger-menu{
         display: flex;
-        position: absolute;
+        /* position: absolute; */
         right: 10px;
         top: 2px;
     }
-   
+    .search-box{
+        float: none;
+        display: inline-block;
+        width: 800px;
+        
+    }
+    #hamberger-menu.active{
+        display: flex;
+    }
+    .side-nav ul{
+        align-items: center;   
+        flex-direction: column;  
+        width: 100%;
+        /* display: none; */
+    }
     .side-nav li{
-        display: block;
-        align-items: flex-start;
+        /* align-content: center;  */
+        display: block;        
+        
+        
     }
 
 }

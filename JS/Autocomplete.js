@@ -39,3 +39,8 @@ function selectInput(list){
     inputBox.value = list.innerHTML;
     resultsBox.innerHTML = '';
 }
+// ---------------------Hamberger-menu-----------------
+const menubutton =document.getElementById('hamberger-menu')[0]
+const side-navLinks = document.getElementsByClassName('side-nav')[0]
+
+menubutton.addEventListener()
