@@ -16,7 +16,7 @@ html{
 /* ----------------------------------------------------------------------------- */
 
 /* for indexcopy */
-.logo{ grid-row: logo;}
+/* .logo{ grid-row: logo;}
 .search-box{ grid-row: search-box;}
 .main-nav{ grid-row: main-nav;}
 .container{
@@ -25,33 +25,36 @@ html{
     gap: 0px;
     padding-top: 15px;
     background-color: pink;
-}
+} */
 .logo{
-    width: 250px;
+    width: 300px;
     background-color: white;
-    transform: translate(1%, 1%);
+    /* transform: translate(1%, 1%); */
+    padding: 10px 20px;
     position: relative;
-    /* float: left; */
-    display: grid;
-    margin-right: 20px;
+    float: left;
+    margin-right: 40px;
+    display: inline-block !important;
     
 }
 /*------------------ for search bar--------------------- */
 .search-box{
     width: 50%;
+    display: block;
     background: rgb(255, 255, 255);
-    /* float: left; */
-    display: grid;
+    float: left;
+    padding: 0px 20px;
     /* margin-right: 5%;  */
     /* margin-left: 5%; */
-    margin-top: 40px;   
+    margin-top: 50px;   
     /* position: relative;     */
+    border-radius: 5px;
 }
 .row{
     display: flex;
     align-items: center;
-    padding: 0px 20px;
-    border-radius: 15px;
+    padding-left:20px;
+   
 }
 input{
     flex: 1;         /* this make the search button move to the right side */
@@ -78,12 +81,12 @@ button{
 }
 .result-box ul li{
     list-style: none;
-    border-radius:15px ;
+    border-radius:10px ;
     padding: 5px 10px;
     display: flex;
 }
 .result-box ul li:hover{
-    background:rgba(232, 180, 106, 0.896) ;
+    background:rgba(244, 231, 216, 0.896) ;
 }
 .result-box {
     max-height: 200px;
@@ -91,12 +94,36 @@ button{
 }
  
 /* ----------------------------------login, cart and side-bar--------------------------------------------------- */
+.sticky{
+    background-color: rgba(38, 80, 119, 0.9);
+    position: fixed;
+    
+    width: 100%;
+    height: 75px;
+    top: 0;
+    left: 0;
+}
+#NavBar {
+    background-color: blue;
+    overflow: hidden;
+  }
+  /* CSS for NavBar Anchor Tag i.e. Links  */
+  #NavBar div {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    float: left;
+    display: block;
+  }
+  
+
 .main-nav{
-    /* float: right; */
-    display: grid;
+    float: left;
+    
     padding-left: 5%;
-    position: relative  ;
-    margin-top: 50px;
+    position: static  ;
+    /* transform: translate(400% , 20%); */
+    margin-top: 55px;
 }
 .main-nav li{
     list-style: none;
@@ -115,11 +142,11 @@ button{
     margin-top: -10px;  
     /* margin-left: 220px; */
     display: flex;
-    position: relative;
+    position: sticky;
     
 }
 #hamberger-menu{
-    display: none; 
+    /* display: none;  */
    
     position: relative;
 }

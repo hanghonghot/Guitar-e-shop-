@@ -1,6 +1,12 @@
-/* --------------------For mobile------------------------------- */
+/* .........Big tablet from 1024 to 1200px */
 /* ------------------------------------------------------------------ */
-@media all and (max-width:900px){
+/* ..........small to big tablet from768 to 1023px */
+/* Small phone 400 to small tablet 768 */
+
+@media all and (max-width:768px){
+    /* *{
+        transform: scale(0.95);
+    } */
     #hamberger-menu{
         display: flex;
         /* position: absolute; */
@@ -10,7 +16,7 @@
     .search-box{
         float: none;
         display: inline-block;
-        width: 800px;
+        width: 700px;
         
     }
     #hamberger-menu.active{
@@ -30,3 +36,10 @@
     }
 
 }
+
+
+
+
+
+
+/* small phone from 0 to 420px */

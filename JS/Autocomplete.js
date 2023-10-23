@@ -40,7 +40,14 @@ function selectInput(list){
     resultsBox.innerHTML = '';
 }
 // ---------------------Hamberger-menu-----------------
-const menubutton =document.getElementById('hamberger-menu')[0]
-const side-navLinks = document.getElementsByClassName('side-nav')[0]
-
-menubutton.addEventListener()
+// ---------------------sticky menu-------
+const navbar = document.querySelector('#NavBar');
+let top = navbar.offsetTop;
+function stickynavbar() {
+  if (window.scrollY >= top) {    
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');    
+  }
+}
+window.addEventListener('scroll', stickynavbar);
