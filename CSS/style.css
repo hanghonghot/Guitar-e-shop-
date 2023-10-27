@@ -146,7 +146,7 @@ button{
     
 }
 #hamberger-menu{
-    /* display: none;  */
+    display: none; 
    
     position: relative;
 }
@@ -176,6 +176,35 @@ button{
     display: table;
     clear: both;
 }
-
+/* ----------------bestseller section --------------------- */
+.slide-container{
+    /* max-width: 1120px; */
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.slide-content{
+    padding: 15px;
+}
+.card{
+    width: 312px ;
+}
+.card .image-box{
+    height: 200px;
+    padding-bottom: 10px;
+}
+.card .image-box img{
+    height: 100%;
+    border-radius: 15px;
+    
+    
+}
+.product-details{
+    font-size: 20px;
+    font-style: bold;
+}
 
 
