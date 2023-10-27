@@ -27,22 +27,21 @@ html{
     background-color: pink;
 } */
 .logo{
-    width: 300px;
-    background-color: white;
-    /* transform: translate(1%, 1%); */
-    padding: 10px 20px;
-    position: relative;
+    width: 150px;
     float: left;
     margin-right: 40px;
-    display: inline-block !important;
+    align-items: center;
+    width: 30%;
     
+    
+}
+.first-row{
+    height: 200px;
 }
 /*------------------ for search bar--------------------- */
 .search-box{
-    width: 50%;
-    display: block;
-    background: rgb(255, 255, 255);
-    float: left;
+    width: 80%;
+    background: rgb(232, 176, 176);
     padding: 0px 20px;
     /* margin-right: 5%;  */
     /* margin-left: 5%; */
@@ -103,27 +102,16 @@ button{
     top: 0;
     left: 0;
 }
-#NavBar {
-    background-color: blue;
-    overflow: hidden;
-  }
-  /* CSS for NavBar Anchor Tag i.e. Links  */
-  #NavBar div {
-    color: white;
-    text-align: center;
-    padding: 15px;
-    float: left;
-    display: block;
-  }
+
   
 
 .main-nav{
-    float: left;
-    
     padding-left: 5%;
     position: static  ;
     /* transform: translate(400% , 20%); */
     margin-top: 55px;
+    display: flex;
+    width: 30%;
 }
 .main-nav li{
     list-style: none;
@@ -140,10 +128,14 @@ button{
 
 .side-nav{
     margin-top: -10px;  
-    /* margin-left: 220px; */
-    display: flex;
+
     position: sticky;
+    text-align: center;
+   
     
+}
+.side-nav a{
+    text-decoration: none;
 }
 #hamberger-menu{
     display: none; 
