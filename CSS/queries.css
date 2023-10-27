@@ -4,19 +4,14 @@
 /* Small phone 400 to small tablet 768 */
 
 @media all and (max-width:768px){
-    /* *{
-        transform: scale(0.95);
-    } */
     #hamberger-menu{
         display: flex;
-        /* position: absolute; */
         right: 10px;
         top: 2px;
     }
     .search-box{
-        float: none;
-        display: inline-block;
-        width: 700px;
+        display:block;
+        width: auto;
         
     }
     #hamberger-menu.active{

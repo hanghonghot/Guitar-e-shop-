@@ -39,15 +39,14 @@ function selectInput(list){
     inputBox.value = list.innerHTML;
     resultsBox.innerHTML = '';
 }
+// ---------------slide-pannels----------------------
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked=true;
+    counter++ ;
+    if(counter > 4){
+        counter = 1;
+    }
+},5000)
 // ---------------------Hamberger-menu-----------------
 // ---------------------sticky menu-------
-const navbar = document.querySelector('#NavBar');
-let top = navbar.offsetTop;
-function stickynavbar() {
-  if (window.scrollY >= top) {    
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');    
-  }
-}
-window.addEventListener('scroll', stickynavbar);
